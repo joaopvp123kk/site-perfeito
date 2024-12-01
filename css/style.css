@@ -1,0 +1,1231 @@
+/* Estilo do HTML e corpo */
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo dos cabeçalhos */
+h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px; /* Tamanho do cabeçalho H2 */
+}
+
+h3 {
+    font-size: 30px; /* Tamanho do cabeçalho H3 */
+}
+
+h4 {
+    font-size: 24px; /* Tamanho do cabeçalho H4 */
+}
+
+h5 {
+    font-size: 18px; /* Tamanho do cabeçalho H5 */
+}
+
+h6 {
+    font-size: 16px; /* Tamanho do cabeçalho H6 */
+}
+
+/* Estilo dos parágrafos */
+p {
+    font-size: 15px;
+    color: #585858; /* Cor do texto dos parágrafos */
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+}
+
+/* Foco em elementos interativos */
+input:focus, select:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+/* Efeitos de hover e foco em links */
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/* Estilo de listas */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Título da seção */
+.section-title h2 {
+    font-size: 30px;
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    font-weight: 700; /* Peso do texto */
+    font-style: italic; /* Estilo itálico */
+}
+
+/* Estilo de fundo */
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; /* Alinhamento do fundo */
+}
+
+/* Espaçamento da seção */
+.spad {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+/* Estilo de texto branco */
+.text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p, .text-white span, .text-white li, .text-white a {
+    color: #fff; /* Cor do texto branco */
+}
+
+	/* Botão de ação principal */
+.site-btn {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    min-width: 186px;
+    padding: 24px 30px;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #081624;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+/* Imagem dentro do botão */
+.site-btn img {
+    position: relative;
+    left: 13px;
+    width: auto !important;
+    display: inline-block !important;
+}
+
+/* Estilos para o fundo do botão */
+.site-btn:after, .site-btn:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 9px;
+    top: 10px;
+    background: #b01ba5; /* Cor de fundo do quadrado */
+    z-index: -2;
+    box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
+}
+
+.site-btn:before {
+    left: 0;
+    top: 0;
+    background: #fff; /* Cor do quadrado de fundo */
+    z-index: -1;
+}
+
+/* Efeito de hover para o botão */
+.site-btn:hover {
+    color: #081624;
+}
+
+	/* Pré-carregador */
+#preloder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999; /* Camada superior */
+    background: #000; /* Fundo preto */
+}
+
+/* Animação do carregador */
+.loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%; /* Centralizado verticalmente */
+    left: 50%; /* Centralizado horizontalmente */
+    margin-top: -13px; /* Compensa altura do loader */
+    margin-left: -13px; /* Compensa largura do loader */
+    border-radius: 60px; /* Bordas arredondadas */
+    animation: loader 0.8s linear infinite; /* Animação do loader */
+}
+
+/* Definição da animação */
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        border: #f44336 solid 4px; /* Cor do carregador */
+        border-left-color: transparent; /* Cor transparente na esquerda */
+    }
+    50% {
+        transform: rotate(180deg); /* Rotação intermediária */
+        border: #673ab7 solid 4px; /* Mudança de cor */
+        border-left-color: transparent; /* Cor transparente na esquerda */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotação final */
+        border: #f44336 solid 4px; /* Retorna à cor original */
+        border-left-color: transparent; /* Cor transparente na esquerda */
+    }
+}
+
+/* Seção do cabeçalho */
+.header-section {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99; /* Camada inferior ao preload */
+    padding: 15px 15px 0; /* Espaçamento */
+}
+
+/* Wrapper do cabeçalho */
+.header-warp {
+    max-width: 1496px; /* Largura máxima do cabeçalho */
+    margin: 0 auto; /* Centralização */
+}
+
+/* Estilo dos ícones de redes sociais */
+.header-social p, .footer-social p, .geme-social-share p {
+    display: inline-block;
+    color: #9190a5; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    padding-top: 4px; /* Espaçamento superior */
+}
+
+/* Estilo dos links de redes sociais */
+.header-social a, .footer-social a, .geme-social-share a {
+    display: inline-flex; /* Layout flexível */
+    width: 32px;
+    height: 32px; /* Tamanho dos ícones */
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Ícones circulares */
+    color: #fff; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    margin-left: 13px; /* Espaçamento entre ícones */
+    transition: all 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover nos ícones */
+.header-social a:hover, .footer-social a:hover, .geme-social-share a:hover {
+    background: #b01ba5; /* Cor ao passar o mouse */
+}
+
+/* Barra do cabeçalho */
+.header-bar-warp {
+    background: #081624; /* Cor de fundo */
+    padding: 39px 40px 0; /* Espaçamento */
+    box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24); /* Sombra */
+}
+
+/* Logo do site */
+.site-logo {
+    float: left; /* Alinhamento à esquerda */
+}
+
+/* Painel do usuário */
+.user-panel {
+    float: right; /* Alinhamento à direita */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: #fff; /* Cor do texto */
+    padding-top: 3px; /* Espaçamento superior */
+}
+
+/* Links do painel do usuário */
+.user-panel a {
+    color: #fff; /* Cor do texto */
+}
+
+/* Efeito de hover nos links do painel do usuário */
+.user-panel a:hover {
+    color: #b01ba5; /* Cor ao passar o mouse */
+}
+
+/* Menu principal */
+.main-menu {
+    list-style: none; /* Remove marcadores de lista */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 3px; /* Espaçamento superior */
+}
+	/* Menu principal */
+.main-menu li {
+    display: inline-block; /* Exibe os itens em linha */
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+}
+
+/* Links do menu principal */
+.main-menu li a {
+    display: block; /* Faz o link ocupar todo o espaço */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: #fff; /* Cor do texto */
+    margin-right: 40px; /* Espaçamento à direita */
+    padding-bottom: 28px; /* Espaçamento inferior */
+    position: relative; /* Permite posicionamento dos pseudo-elementos */
+    padding-right: 20px; /* Espaçamento à direita */
+}
+
+/* Seta de sub-menu */
+.main-menu li a:after {
+    position: absolute; /* Permite posicionar em relação ao link */
+    content: ""; /* Necessário para criar o pseudo-elemento */
+    width: 20px; /* Largura da seta */
+    height: 20px; /* Altura da seta */
+    right: 0; /* Posiciona à direita */
+    top: 1px; /* Posiciona levemente acima do centro */
+    background-image: url("../img/icons/arrow-down.png"); /* Imagem da seta */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: right center; /* Centraliza a imagem verticalmente */
+}
+
+/* Ícones dentro dos links */
+.main-menu li a i {
+    color: #928d92; /* Cor do ícone */
+    margin-left: 5px; /* Espaçamento à esquerda do ícone */
+}
+
+/* Efeito de hover nos links do menu */
+.main-menu li a:hover {
+    color: #b01ba5; /* Muda a cor ao passar o mouse */
+}
+
+/* Efeito de hover na seta do link */
+.main-menu li a:hover:after {
+    background-image: url("../img/icons/arrow-down-color.png"); /* Muda a seta ao passar o mouse */
+}
+
+/* Efeito de hover no ícone */
+.main-menu li a:hover i {
+    color: #b01ba5; /* Muda a cor do ícone ao passar o mouse */
+}
+
+/* Exibe o sub-menu ao passar o mouse */
+.main-menu li:hover .sub-menu {
+    visibility: visible; /* Torna visível */
+    opacity: 1; /* Opacidade total */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Muda a cor do link ao passar o mouse */
+.main-menu li:hover > a {
+    color: #b01ba5; /* Muda a cor do link */
+}
+
+/* Muda a seta ao passar o mouse */
+.main-menu li:hover > a:after {
+    background-image: url("../img/icons/arrow-down-color.png"); /* Muda a seta */
+}
+
+/* Estilo do sub-menu */
+.main-menu li .sub-menu {
+    position: absolute; /* Permite posicionamento em relação ao item do menu */
+    list-style: none; /* Remove marcadores de lista */
+    text-align: left; /* Alinha texto à esquerda */
+    width: 220px; /* Largura do sub-menu */
+    left: 0; /* Alinha à esquerda */
+    top: 100%; /* Posiciona logo abaixo do menu principal */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+    visibility: hidden; /* Inicialmente invisível */
+    opacity: 0; /* Inicialmente transparente */
+    margin-top: 50px; /* Espaço entre o menu principal e sub-menu */
+    background: #fff; /* Fundo branco */
+    z-index: 99; /* Camada acima de outros elementos */
+    transition: all 0.4s; /* Transição suave */
+    box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.4); /* Sombra do sub-menu */
+}
+
+/* Itens do sub-menu */
+.main-menu li .sub-menu li {
+    display: block; /* Exibe os itens em bloco */
+}
+
+/* Links do sub-menu */
+.main-menu li .sub-menu li a {
+    display: block; /* Faz o link ocupar todo o espaço */
+    color: #000; /* Cor do texto do sub-menu */
+    margin-right: 0; /* Remove espaçamento à direita */
+    padding: 8px 30px; /* Espaçamento interno */
+}
+
+/* Remove a seta do sub-menu */
+.main-menu li .sub-menu li a:after {
+    display: none; /* Não exibe seta no sub-menu */
+}
+
+/* Efeito de hover no sub-menu */
+.main-menu li .sub-menu li a:hover {
+    color: #b01ba5; /* Muda a cor ao passar o mouse */
+}
+	/* Estilo para os pontos de navegação do slider */
+.hero-slider .owl-dots {
+    display: flex; /* Exibe os pontos como um flex container */
+    z-index: 2; /* Define a camada de exibição */
+    left: calc(50% - 740px); /* Centraliza os pontos horizontalmente */
+    bottom: 38px; /* Espaçamento inferior */
+    position: absolute; /* Posiciona absolutamente em relação ao pai */
+    width: 1496px; /* Largura dos pontos de navegação */
+}
+
+/* Estilo para cada ponto de navegação */
+.hero-slider .owl-dots .owl-dot {
+    width: 44px; /* Largura do ponto */
+    height: 44px; /* Altura do ponto */
+    border-radius: 50%; /* Faz o ponto ser circular */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    border: transparent solid 2px; /* Borda padrão */
+    color: #fff; /* Cor do texto */
+    display: inline-flex; /* Exibe como flex para centralizar conteúdo */
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: center; /* Alinha itens horizontalmente */
+}
+
+/* Estilo para o ponto ativo */
+.hero-slider .owl-dots .owl-dot.active {
+    color: #b01ba5; /* Cor do ponto ativo */
+    border: #b01ba5 solid 2px; /* Borda do ponto ativo */
+}
+
+/* Estilo para os botões de navegação do slider */
+.hero-slider .owl-nav {
+    margin-top: -24px; /* Ajusta a posição vertical */
+    display: block; /* Exibe como bloco */
+}
+
+/* Estilo para o botão "próximo" */
+.hero-slider .owl-nav .owl-next {
+    position: absolute; /* Posiciona absolutamente */
+    top: 50%; /* Centraliza verticalmente */
+    right: 100px; /* Espaçamento à direita */
+}
+
+/* Estilo para cada item do slider */
+.hero-item {
+    height: 921px; /* Altura do item */
+    padding-top: 125px; /* Espaçamento superior */
+    border-bottom: 2px solid #b01ba5; /* Borda inferior */
+}
+
+/* Estilo para o título do item do slider */
+.hero-item h2 {
+    font-size: 160px; /* Tamanho do título */
+    color: #fff; /* Cor do título */
+    font-weight: 500; /* Peso da fonte */
+    line-height: 1; /* Altura da linha */
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+    top: 100px; /* Espaçamento superior */
+    opacity: 0; /* Inicialmente invisível */
+}
+
+/* Estilo para o parágrafo do item do slider */
+.hero-item p {
+    font-size: 24px; /* Tamanho da fonte do parágrafo */
+    color: rgba(255, 255, 255, 0.4); /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    margin-bottom: 70px; /* Espaçamento inferior */
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+    top: 80px; /* Espaçamento superior */
+    opacity: 0; /* Inicialmente invisível */
+}
+
+/* Estilo para o botão no item do slider */
+.hero-item .site-btn {
+    position: relative; /* Permite posicionamento em relação ao pai */
+    top: 50px; /* Espaçamento superior */
+    opacity: 0; /* Inicialmente invisível */
+}
+
+/* Estilo para itens ativos no slider */
+.hero-slider .owl-item.active .hero-item h2, 
+.hero-slider .owl-item.active .hero-item p, 
+.hero-slider .owl-item.active .hero-item .site-btn {
+    top: 0; /* Remove o espaçamento superior */
+    opacity: 1; /* Torna visível */
+}
+
+/* Transições para os elementos do slider */
+.hero-slider .owl-item.active .hero-item h2 {
+    transition: all 0.5s 0.4s ease; /* Transição suave para o título */
+}
+
+.hero-slider .owl-item.active .hero-item p {
+    transition: all 0.5s 0.6s ease; /* Transição suave para o parágrafo */
+}
+
+.hero-slider .owl-item.active .hero-item .site-btn {
+    transition: all 0.5s 0.8s ease; /* Transição suave para o botão */
+}
+
+/* Estilo para a seção de introdução */
+.intro-section {
+    background: #501555; /* Fundo em roxo escuro */
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Estilo para a seção de introdução */
+.intro-section {
+    background: #710891; /* Cor de fundo da seção */
+    padding: 60px 0; /* Reduzido para adaptar melhor */
+    text-align: center; /* Centralizar o conteúdo dentro da seção */
+}
+
+/* Estilo das caixas de texto */
+.intro-section .intro-text-box {
+    background-color: #34164b; /* Cor de fundo para contraste */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(23, 0, 41, 0.3); /* Sombra para dar profundidade */
+}
+
+/* Estilo do botão animado */
+.intro-section .animated-btn {
+    font-size: 15px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o texto e a seta */
+    margin-top: 10px;
+}
+
+/* Alteração de cor e fundo ao passar o mouse */
+.intro-section .animated-btn:hover {
+    color: #7f00ff; /* Cor roxa mais forte */
+    background-color: #ffffff;
+}
+
+/* Animação da seta ao passar o mouse */
+.intro-section .animated-btn .arrow-icon {
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 0;
+    color: rgb(153, 0, 255); /* Cor da seta preta */
+}
+
+.intro-section .animated-btn:hover .arrow-icon {
+    transform: translateX(5px); /* Move a seta 5px para a direita */
+}
+
+/* Animação de clique */
+.intro-section .animated-btn:active {
+    transform: scale(0.95); /* Pequeno efeito de clique no botão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .intro-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo para o meta texto da caixa de texto */
+.text-box .top-meta {
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para os links dentro do meta texto */
+.text-box .top-meta a {
+    color: #b01ba5; /* Cor dos links */
+}
+
+/* Estilo para o título da caixa de texto */
+.text-box h3 {
+    margin-bottom: 40px; /* Espaçamento inferior */
+    max-width: 370px; /* Largura máxima do título */
+}
+
+/* Estilo para os parágrafos dentro da caixa de texto */
+.text-box p {
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: #68647d; /* Cor do texto */
+    margin-bottom: 35px; /* Espaçamento inferior */
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta o tamanho temporariamente */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilo para o link "Read more" */
+.text-box .read-more {
+    font-size: 15px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Transforma texto para maiúsculas */
+    font-weight: 700; /* Peso da fonte */
+    font-style: italic; /* Estilo em itálico */
+    color: #fff; /* Cor do texto */
+    transition: color 0.3s, transform 0.3s; /* Transição para suavizar */
+}
+
+.text-box .read-more img {
+    margin-left: 13px; /* Espaçamento à esquerda */
+}
+
+/* Classe para ativar a animação de pulso */
+.text-box .read-more.pulse {
+    animation: pulse 0.4s ease; /* Aplica a animação de pulso */
+}
+
+/* Estilo para a seção de blog */
+.blog-section {
+    background: #000; /* Cor de fundo sólida */
+    background: linear-gradient(45deg, #501755 0%, #2d1854 100%); /* Gradiente de fundo */
+}
+
+/* Margem inferior da seção de título */
+.blog-section .section-title {
+    margin-bottom: 25px; /* Espaçamento inferior */
+}
+
+/* Estilo para o filtro de blog */
+.blog-filter {
+    list-style: none; /* Remove os marcadores da lista */
+    display: block; /* Exibe como bloco */
+}
+
+/* Estilo para cada item do filtro de blog */
+.blog-filter li {
+    display: inline-block; /* Exibe itens na horizontal */
+}
+
+/* Estilo para os links dentro do filtro de blog */
+.blog-filter li a {
+    display: block; /* Exibe como bloco */
+    color: #fff; /* Cor do texto */
+    padding: 16px 36px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    background: #6f2b95; /* Cor de fundo */
+    line-height: 1.1; /* Altura da linha */
+    margin-right: 7px; /* Espaçamento à direita */
+    transition: all 0.3s; /* Transição suave para alterações */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo para o efeito de passar o mouse sobre os links do filtro */
+.blog-filter li a:hover {
+    background: #b01ba5; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para cada item do blog */
+.blog-item {
+    clear: both;
+    margin-top: 86px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno para dar mais destaque */
+    background-color: #1a1a1a; /* Fundo para destacar o item */
+    border-radius: 10px; /* Arredondar cantos do container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para o container */
+    overflow: hidden; /* Impedir que elementos saiam do container */
+}
+
+/* Estilo para a miniatura do blog */
+.blog-item .blog-thumb {
+    width: 360px; /* Largura da imagem */
+    float: left; /* Alinha à esquerda */
+    margin-right: 30px; /* Espaçamento à direita */
+}
+
+.blog-item .blog-thumb img {
+    width: 100%; /* Garantir que a imagem ocupe a largura do container */
+    border-radius: 8px; /* Arredondar bordas da imagem */
+}
+
+/* Estilo para a caixa de texto do blog */
+.blog-item .text-box {
+    width: calc(100% - 390px); /* Subtrai a largura da imagem e margem */
+    overflow: hidden;
+    color: #fff; /* Texto branco para contrastar com o fundo */
+}
+
+/* Estilo para os parágrafos dentro da caixa de texto do blog */
+.blog-item .text-box p {
+    margin-bottom: 20px; /* Ajustar espaçamento inferior */
+    line-height: 1.6; /* Melhorar o espaçamento entre linhas */
+}
+
+/* Estilo para o link de "Read more" */
+.blog-item .read-more {
+    color: #ffcc00; /* Cor de destaque */
+    font-weight: bold;
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre o texto e o ícone */
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+.blog-item .read-more:hover {
+    color: #ffd633; /* Mudar cor ao passar o mouse */
+}
+
+	/* Estilo para cada item do widget */
+.widget-item {
+    margin-bottom: 85px; /* Espaçamento inferior */
+}
+
+/* Remove o espaçamento inferior do último item do widget */
+.widget-item:last-child {
+    margin-bottom: 0; /* Espaçamento inferior zerado */
+}
+
+/* Estilo para o título do widget */
+.widget-item .widget-title {
+    color: #fff; /* Cor do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: 700; /* Peso da fonte */
+    font-style: italic; /* Estilo em itálico */
+    padding-left: 38px; /* Espaçamento à esquerda */
+    margin-bottom: 48px; /* Espaçamento inferior */
+}
+
+/* Estilo para itens do widget de tendências */
+.trending-widget .tw-item {
+    margin-bottom: 38px; /* Espaçamento inferior */
+}
+
+/* Remove o espaçamento inferior do último item de tendências */
+.trending-widget .tw-item:last-child {
+    margin-bottom: 0; /* Espaçamento inferior zerado */
+}
+
+/* Estilo para a miniatura do item de tendências */
+.trending-widget .tw-thumb {
+    float: left; /* Alinha à esquerda */
+    margin-right: 17px; /* Espaçamento à direita */
+    overflow: hidden; /* Oculta o conteúdo que transborda */
+}
+
+/* Estilo para os metadados do texto de tendências */
+.trending-widget .tw-text .tw-meta {
+    color: #68647d; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    margin-bottom: 7px; /* Espaçamento inferior */
+}
+
+/* Estilo para links nos metadados */
+.trending-widget .tw-text .tw-meta a {
+    color: #b01ba5; /* Cor do texto do link */
+}
+
+/* Estilo para o título do item de tendências */
+.trending-widget .tw-text h5 {
+    font-size: 18px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    line-height: 1.5; /* Altura da linha */
+}
+
+/* Estilo para a seção de categorias */
+.categories-widget {
+    background: #34164b; /* Cor de fundo */
+    padding: 55px 0 25px; /* Espaçamento */
+}
+
+/* Estilo para a lista de categorias */
+.categories-widget ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0 38px; /* Espaçamento lateral */
+}
+
+/* Estilo para cada item da lista de categorias */
+.categories-widget ul li {
+    display: block; /* Exibe como bloco */
+}
+
+/* Estilo para os links na lista de categorias */
+.categories-widget ul li a {
+    display: inline-block; /* Exibe como bloco inline */
+    position: relative; /* Posição relativa para efeitos futuros */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #68647d; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    padding-right: 19px; /* Espaçamento à direita */
+    transition: all 0.2s; /* Transição suave para alterações */
+    background-image: url("../img/icons/double-arrow.png"); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Não repetir imagem */
+    background-position: right -120% center; /* Posição da imagem */
+    background-size: 11px; /* Tamanho da imagem */
+}
+
+/* Estilo para o efeito de passar o mouse sobre os links de categorias */
+.categories-widget ul li a:hover {
+    color: #b01ba5; /* Cor do texto ao passar o mouse */
+    background-position: right center; /* Altera a posição da imagem ao passar o mouse */
+}
+
+/* Estilo para a seção de busca */
+.search-widget {
+    position: relative; /* Posição relativa */
+}
+
+/* Estilo para o campo de busca */
+.search-widget input {
+    width: 100%; /* Largura total */
+    height: 40px; /* Altura */
+    border: none; /* Sem borda */
+    border-bottom: 2px solid #72628b; /* Borda inferior */
+    background: none; /* Sem fundo */
+    padding-right: 60px; /* Espaçamento à direita */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilo para o botão de busca */
+.search-widget button {
+    position: absolute; /* Posição absoluta */
+    right: 0; /* Alinha à direita */
+    top: 0; /* Alinha ao topo */
+    color: #b01ba5; /* Cor do texto */
+    font-weight: 700; /* Peso da fonte */
+    font-size: 14px; /* Tamanho da fonte */
+    font-style: italic; /* Estilo em itálico */
+    cursor: pointer; /* Cursor de ponteiro */
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+	/* Estilo para itens de comentários mais recentes */
+.latest-comments .lc-item {
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Remove o espaçamento inferior do último item de comentários */
+.latest-comments .lc-item:last-child {
+    margin-bottom: 0; /* Espaçamento inferior zerado */
+}
+
+/* Estilo para o avatar do comentário */
+.latest-comments .lc-item .lc-avatar {
+    width: 64px; /* Largura do avatar */
+    height: 64px; /* Altura do avatar */
+    border-radius: 50%; /* Torna o avatar redondo */
+    float: left; /* Alinha à esquerda */
+    margin-right: 12px; /* Espaçamento à direita */
+}
+
+/* Estilo para o texto do comentário */
+.latest-comments .lc-item .tw-text {
+    padding-top: 10px; /* Espaçamento superior */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+}
+
+/* Estilo para links no texto do comentário */
+.latest-comments .lc-item .tw-text a {
+    color: #b01ba5; /* Cor do texto do link */
+}
+
+/* Estilo para spans no texto do comentário */
+.latest-comments .lc-item .tw-text span {
+    color: #68647d; /* Cor do texto do span */
+}
+
+/* Estilo para a seção de vídeo */
+.intro-video-section {
+    height: 757px; /* Altura da seção de vídeo */
+    position: relative; /* Posição relativa para posicionamento absoluto dos filhos */
+}
+
+/* Estilo para o botão de reprodução do vídeo */
+.video-play-btn {
+    position: absolute; /* Posição absoluta */
+    left: calc(50% - 61px); /* Centraliza horizontalmente */
+    top: calc(50% - 61px); /* Centraliza verticalmente */
+    width: 122px; /* Largura do botão */
+    height: 122px; /* Altura do botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    padding-top: 35px; /* Espaçamento superior */
+    border-radius: 50%; /* Torna o botão redondo */
+    background: rgb(255, 255, 255, 0.16); /* Fundo semitransparente */
+}
+
+/* Estilo para o texto da seção de vídeo */
+.video-text {
+    margin-bottom: 80px; /* Espaçamento inferior */
+    padding: 27px 0; /* Espaçamento superior e inferior */
+    padding-left: 25px; /* Espaçamento à esquerda */
+    position: relative; /* Posição relativa */
+}
+
+/* Estilo para o título da seção de vídeo */
+.video-text h2 {
+    font-size: 48px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-style: italic; /* Estilo em itálico */
+    font-weight: 700; /* Peso da fonte */
+    color: #fff; /* Cor do texto */
+    margin-bottom: 1px; /* Espaçamento inferior */
+}
+
+/* Estilo para o parágrafo da seção de vídeo */
+.video-text p {
+    font-size: 18px; /* Tamanho da fonte */
+    color: #a3a1b3; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    margin-bottom: 0; /* Sem espaçamento inferior */
+}
+	/* Estilo para o pseudo-elemento que aparece após a seção de vídeo */
+.video-text:after {
+    position: absolute; /* Posição absoluta */
+    content: ""; /* Conteúdo vazio */
+    width: 9px; /* Largura */
+    height: 100%; /* Altura total */
+    left: -22px; /* Posição à esquerda */
+    top: 0; /* Posição superior */
+    border-left: 3px solid #de46d6; /* Bordas à esquerda */
+    background: #fff; /* Fundo branco */
+    box-shadow: 0 0 9px 3px rgb(226, 30, 228, 0.5); /* Sombra ao redor */
+}
+
+/* Seção de destaque */
+.featured-section {
+    position: relative; /* Posição relativa para controle de layout */
+    overflow: hidden; /* Oculta partes que ultrapassam o contêiner */
+}
+
+/* Background da seção de destaque */
+.featured-bg {
+    width: calc(50% - 156px); /* Largura proporcional */
+    float: left; /* Alinha à esquerda */
+    height: 100%; /* Altura total */
+    left: 0; /* Alinhamento à esquerda */
+    right: 0; /* Alinhamento à direita */
+    position: absolute; /* Posição absoluta */
+}
+
+/* Caixa de destaque */
+.featured-box {
+    float: right; /* Alinha à direita */
+    width: calc(50% + 156px); /* Largura proporcional */
+    background: #fff; /* Fundo branco */
+    padding: 100px 50px 130px 79px; /* Preenchimento interno */
+}
+
+/* Estilo para o texto dentro da caixa de destaque */
+.featured-box .text-box {
+    max-width: 810px; /* Largura máxima */
+}
+
+/* Estilo para o texto da meta */
+.featured-box .text-box .top-meta {
+    color: #68647d; /* Cor do texto */
+}
+
+/* Estilo para o título na caixa de destaque */
+.featured-box .text-box h3 {
+    font-size: 60px; /* Tamanho da fonte */
+    max-width: 100%; /* Largura máxima */
+}
+
+/* Estilo para parágrafos na caixa de destaque */
+.featured-box .text-box p {
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para links "Read more" na caixa de destaque */
+.featured-box .text-box .read-more {
+    color: #251e2f; /* Cor do texto */
+}
+
+/* Seção de newsletter */
+.newsletter-section {
+    background: #3e0f3d; /* Fundo gradiente */
+    background: linear-gradient(to right, #3e0f3d 0%, #1c0f3b 100%); /* Gradiente */
+    padding: 108px 0 95px; /* Preenchimento */
+    text-align: center; /* Alinhamento central */
+}
+
+/* Estilo para o título da seção de newsletter */
+.newsletter-section h2 {
+    font-size: 48px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    font-weight: 700; /* Peso da fonte */
+    font-style: italic; /* Estilo em itálico */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    margin-bottom: 73px; /* Espaçamento inferior */
+}
+
+/* Estilo para o formulário de newsletter */
+.newsletter-form {
+    padding-left: 56px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para o campo de entrada no formulário */
+.newsletter-form input {
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    font-style: italic; /* Estilo em itálico */
+    color: #fff; /* Cor do texto */
+    width: 787px; /* Largura do campo */
+    border: none; /* Sem bordas */
+    border-bottom: 2px solid #9b91a6; /* Borda inferior */
+    background: none; /* Sem fundo */
+    height: 63px; /* Altura do campo */
+    margin-right: 26px; /* Espaçamento à direita */
+}
+
+/* Seção de rodapé */
+.footer-section {
+    text-align: center; /* Alinhamento central */
+    background: #330d38; /* Fundo gradiente */
+    background: linear-gradient(to right, #330d38 0%, #190d36 100%); /* Gradiente */
+}
+
+/* Estilo para o contêiner do rodapé */
+.footer-section .container {
+    position: relative; /* Posição relativa para controle de layout */
+    padding: 60px 15px 25px; /* Preenchimento */
+}
+
+/* Posições das imagens no rodapé */
+.kratos h2-pic {
+    position: absolute; /* Posição absoluta */
+    left: -13px; /* Posição à esquerda */
+    bottom: 19px; /* Posição inferior */
+}
+
+.kratos-pic {
+    position: absolute; /* Posição absoluta */
+    right: 50px; /* Posição à direita */
+    bottom: 19px; /* Posição inferior */
+}
+
+/* Menu do rodapé */
+.footer-menu {
+    padding-top: 62px; /* Espaçamento superior */
+}
+
+/* Remover o espaçamento à direita do último item do menu */
+.footer-menu li:last-child a {
+    margin-right: 0; /* Zera o espaçamento à direita */
+}
+
+/* Estilo para ícones de redes sociais no rodapé */
+.footer-social {
+    padding-top: 20px; /* Espaçamento superior */
+    padding-bottom: 40px; /* Espaçamento inferior */
+}
+
+/* Espaçamento do primeiro ícone de rede social */
+.footer-social a:first-child {
+    margin-left: 0; /* Zera o espaçamento à esquerda */
+}
+
+/* Estilo para o texto de direitos autorais */
+.copyright {
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: #9190a5; /* Cor do texto */
+    opacity: 0.20; /* Opacidade */
+}
+
+/* Estilo para links de direitos autorais */
+.copyright a {
+    color: #9190a5; /* Cor do link */
+}
+
+/* Estilo para links de direitos autorais ao passar o mouse */
+.copyright a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Seção superior da página */
+.page-top-section {
+    height: 355px; /* Altura da seção */
+    padding-top: 210px; /* Preenchimento superior */
+}
+
+/* Estilo para informações da página */
+.page-info {
+    max-width: 1496px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    padding-left: 60px; /* Preenchimento à esquerda */
+}
+
+/* Estilo para o título na seção de informações da página */
+.page-info h2 {
+    color: #fff; /* Cor do texto */
+    font-size: 48px; /* Tamanho da fonte */
+}
+
+/* Estilo para breadcrumb */
+.site-breadcrumb a,
+.site-breadcrumb span {
+    font-style: italic; /* Estilo em itálico */
+    color: #fff; /* Cor do texto */
+    margin: 0 10px; /* Espaçamento lateral */
+    font-weight: 700; /* Peso da fonte */
+}
+
+/* Remove o espaçamento à esquerda do primeiro item do breadcrumb */
+.site-breadcrumb a:first-child {
+    margin-left: 0; /* Zera o espaçamento à esquerda */
+}
+
+/* Estilo para spans no breadcrumb */
+.site-breadcrumb span {
+    color: #c313b7; /* Cor do texto do span */
+}
+
+/* Seção de jogos */
+.games-section {
+    padding: 80px 0; /* Preenchimento superior e inferior */
+    background: linear-gradient(45deg, #501755 0%, #2d1854 100%); /* Gradiente de fundo */
+}
+
+/* Filtros de jogos */
+.game-filter {
+    list-style: none; /* Remove a lista padrão */
+    margin-bottom: 40px; /* Reduzido para maior proximidade com os jogos */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os filtros se ajustem responsivamente */
+    justify-content: center; /* Centraliza os filtros */
+}
+
+/* Estilo para cada item de filtro de jogos */
+.game-filter li {
+    display: inline-block;
+    margin: 5px; /* Espaçamento entre os filtros */
+}
+
+/* Estilo dos links de filtro */
+.game-filter li a {
+    display: block;
+    width: 40px; /* Largura do item */
+    height: 40px; /* Altura do item */
+    background: #503c6e; /* Cor de fundo do item */
+    border-radius: 50%; /* Tornando o filtro circular */
+    text-align: center;
+    line-height: 40px; /* Centraliza o texto */
+    color: #ffffff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover no filtro */
+.game-filter li a:hover {
+    background: #7f00ff; /* Cor de fundo mais forte no hover */
+    color: #fff; /* Mantém a cor do texto branca */
+}
+
+/* Estilo do conteúdo de jogos */
+.game-item {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    overflow: hidden; /* Impede que o conteúdo saia do limite */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+.game-item:hover {
+    transform: translateY(-10px); /* Animação de elevação no hover */
+}
+
+/* Estilo para as imagens dos jogos */
+.game-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem cubra o espaço do container */
+}
+
+/* Título do jogo */
+.game-item h5 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Link de leitura dos jogos */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #7f00ff;
+    padding: 8px 16px;
+    border: 2px solid #7f00ff;
+    border-radius: 6px;
+    margin: 15px auto;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover no link de leitura */
+.read-more:hover {
+    background-color: #7f00ff;
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .game-filter li a {
+        font-size: 14px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .game-item h5 {
+        font-size: 16px; /* Ajuste do tamanho da fonte */
+    }
+    
+    .game-item {
+        margin-bottom: 30px; /* Mais espaço entre os itens */
+    }
+}
+
+/* Estilo para as imagens dos jogos */
+.game-item img {
+    width: 100%; /* Mantém a largura das imagens */
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço do container sem distorcer */
+}
+
+/* Estilo para as imagens dos jogos */
+.game-item img {
+    width: 100%;
+    max-height: 200px; /* Limita a altura máxima das imagens */
+    object-fit: cover;
+}
+
+	
