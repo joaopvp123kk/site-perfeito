@@ -1,0 +1,82 @@
+/* Estilo geral da página */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #4b0082, #2a003e); /* Tons de roxo escuro */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: #4b0082; /* Fundo preto translúcido */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ff55aa; /* Rosa para destaque */
+}
+
+/* Inputs */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #24003d; /* Fundo roxo escuro */
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-container input:focus {
+    background-color: #6a0dad; /* Fundo roxo mais claro no foco */
+}
+
+/* Botão */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff55aa; /* Rosa vibrante */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #ff2299; /* Rosa mais claro no hover */
+}
+
+/* Links */
+.form-container p {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.form-container a {
+    color: #ff55aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container a:hover {
+    color: #ff2299; /* Destaque no hover */
+    text-decoration: underline;
+}

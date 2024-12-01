@@ -1,0 +1,5 @@
+Mirror in progress since Fri, 25 Oct 2024 18:45:41 .. please wait!
+winhttrack -WC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "pt_BR, en, *" https://preview.colorlib.com/theme/endgam/ -O1 ""C:\Meus Sites\3aaa"" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar 
+To pause the engine: create an empty file named 'hts-stop.lock'
+PID=11780
+START=1729892741
